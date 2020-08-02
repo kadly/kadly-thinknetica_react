@@ -26,6 +26,10 @@ const author = {
   'name': 'Это компонент карточки автора'
 }
 
+const subscription = {
+  'text': 'Подписаться на книгу'
+}
+
 ReactDOM.render(
   <App book={book} author={author} />,
   document.getElementById('root')

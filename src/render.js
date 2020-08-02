@@ -27,6 +27,10 @@ const author = {
   'name': 'Это компонент карточки автора'
 }
 
-const render = () => ReactDOMServer.renderToString(<App book={book} author={author}/>);
+const subscription = {
+  'text': 'Подписаться на книгу'
+}
+
+const render = () => ReactDOMServer.renderToString(<App book={book} author={author} subscription={subscription} />);
 
 export default render;
