@@ -26,9 +26,7 @@ const author = {
   'name': 'Это компонент карточки автора'
 }
 
-const subscription = {
-  'text': 'Подписаться на книгу'
-}
+<div>Подписаться на книгу</div>
 
 ReactDOM.render(
   <App book={book} author={author} />,
