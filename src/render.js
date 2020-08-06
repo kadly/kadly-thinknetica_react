@@ -1,5 +1,6 @@
-import ReactDOM from 'react-dom';
 import React from 'react';
+
+import ReactDOMServer from 'react-dom/server';
 
 import App from './App';
 
@@ -28,7 +29,6 @@ const author = {
 
 <div>Подписаться на книгу</div>
 
-ReactDOM.render(
-  <App book={book} author={author} />,
-  document.getElementById('root')
-);
+const render = () => ReactDOMServer.renderToString(<App book={book} author={author} />);
+
+export default render;
